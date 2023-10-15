@@ -17,21 +17,17 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" width="100" />
+        <img src={logo} className="App-logo" alt="logo" width="250" />
         <h1>cherrycodes.net</h1>
       </header>
-      <main>
-        <About />
-        <div>
-          <Portfolio />
-        </div>
-      </main>
+      <About />
+      <Portfolio />
     </div>
   );
 }
 
 const About = () => (
-  <div>
+  <div id="about">
     <p>
       Hi! I am a software engineer based in the south west of the UK. I started my career as a web designer, before
       moving on to front end development, and am now dipping my toes into full stack and app development.
@@ -45,7 +41,7 @@ const About = () => (
 
 const Portfolio = () => {
   return (
-    <div>
+    <div id="portfolio">
       {portfolioItems.map((item, index) => (
         <div key={index}>
           <PortfolioCard item={item} />
