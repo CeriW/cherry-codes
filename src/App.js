@@ -56,7 +56,7 @@ const PortfolioCard = ({ item }) => {
   const shortUrl = `${item.url}.cherrycodes.net`;
 
   return (
-    <div className="portfolio-card">
+    <a className="portfolio-card" href={url} target="_blank" rel="noreferrer">
       <h2>{item.title}</h2>
       <img src={item.previewImage} alt={item.title} />
       <div>{item.description}</div>
@@ -67,7 +67,7 @@ const PortfolioCard = ({ item }) => {
       <a href={url} target="_blank" rel="noreferrer">
         {shortUrl}
       </a>
-    </div>
+    </a>
   );
 };
 
