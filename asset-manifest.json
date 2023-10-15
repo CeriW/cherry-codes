@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/cherry-codes/static/css/main.4e642f94.css",
-    "main.js": "/cherry-codes/static/js/main.ab232d34.js",
-    "static/js/787.a345ff2b.chunk.js": "/cherry-codes/static/js/787.a345ff2b.chunk.js",
-    "static/media/tgaa-stats-preview.webp": "/cherry-codes/static/media/tgaa-stats-preview.696dc2a0c944f3596c3a.webp",
-    "static/media/grid-background.svg": "/cherry-codes/static/media/grid-background.09096d3af691fb9bda4e.svg",
-    "index.html": "/cherry-codes/index.html",
-    "main.4e642f94.css.map": "/cherry-codes/static/css/main.4e642f94.css.map",
-    "main.ab232d34.js.map": "/cherry-codes/static/js/main.ab232d34.js.map",
-    "787.a345ff2b.chunk.js.map": "/cherry-codes/static/js/787.a345ff2b.chunk.js.map"
+    "main.css": "/static/css/main.4c9f6ab5.css",
+    "main.js": "/static/js/main.fdb29772.js",
+    "static/js/787.a345ff2b.chunk.js": "/static/js/787.a345ff2b.chunk.js",
+    "static/media/tgaa-stats-preview.webp": "/static/media/tgaa-stats-preview.696dc2a0c944f3596c3a.webp",
+    "static/media/grid-background.svg": "/static/media/grid-background.09096d3af691fb9bda4e.svg",
+    "static/media/top-bar-1.svg": "/static/media/top-bar-1.a721cd28a794329dfa7f.svg",
+    "index.html": "/index.html",
+    "main.4c9f6ab5.css.map": "/static/css/main.4c9f6ab5.css.map",
+    "main.fdb29772.js.map": "/static/js/main.fdb29772.js.map",
+    "787.a345ff2b.chunk.js.map": "/static/js/787.a345ff2b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e642f94.css",
-    "static/js/main.ab232d34.js"
+    "static/css/main.4c9f6ab5.css",
+    "static/js/main.fdb29772.js"
   ]
 }
