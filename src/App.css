@@ -2,6 +2,7 @@
   --green: #abdda4;
   --greenlight: #e5f5e0;
   --red: #ee0100;
+  --redaccent: #bb0000;
   --padding-default: 30px;
   --padding-small: 10px;
   --radius: 6px;
@@ -68,21 +69,25 @@ header img {
 
 #portfolio {
   grid-area: portfolio;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .portfolio-card {
   background: #fff;
   box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
-
-  /* border-radius: var(--radius); */
   border: var(--border);
-  max-width: 400px;
   text-align: left;
   transition: 0.4s;
   display: block;
   color: #000;
   text-decoration: none;
   position: relative;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 400px;
 }
 
 .portfolio-card h2 {
@@ -98,9 +103,19 @@ header img {
 }
 
 .portfolio-card .top-bar {
-  background: var(--red);
+  background: var(--red) url('./assets/top-bar-1.svg') right bottom no-repeat;
+  background-size: cover;
   padding: 10px;
   border-bottom: var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.portfolio-card .top-bar svg {
+  width: 25px;
+  height: 25px;
 }
 
 .portfolio-card img {
@@ -115,4 +130,9 @@ header img {
   padding: 10px 15px;
   border: var(--border);
   margin-top: 20px;
+  transition: 0.2s;
+}
+
+.portfolio-card a:hover {
+  background: var(--redaccent);
 }

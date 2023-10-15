@@ -1,13 +1,48 @@
 import logo from './assets/cherry.png';
 import tgaaStatsPreview from './assets/tgaa-stats-preview.webp';
 import './App.css';
+import { FiExternalLink } from 'react-icons/fi';
 
 const portfolioItems = [
   {
     title: 'TGAA stats',
     description:
       'A one-page website to show the percentage of players who got each achievement on The Great Ace Attorney Chronicles.',
-    tech: 'Made using React and powered by the Steam Web API',
+    url: 'tgaa-stats',
+    previewImage: tgaaStatsPreview,
+  },
+  {
+    title: 'TGAA stats',
+    description:
+      'A one-page website to show the percentage of players who got each achievement on The Great Ace Attorney Chronicles.',
+    url: 'tgaa-stats',
+    previewImage: tgaaStatsPreview,
+  },
+  {
+    title: 'TGAA stats',
+    description:
+      'A one-page website to show the percentage of players who got each achievement on The Great Ace Attorney Chronicles.',
+    url: 'tgaa-stats',
+    previewImage: tgaaStatsPreview,
+  },
+  {
+    title: 'TGAA stats',
+    description:
+      'A one-page website to show the percentage of players who got each achievement on The Great Ace Attorney Chronicles.',
+    url: 'tgaa-stats',
+    previewImage: tgaaStatsPreview,
+  },
+  {
+    title: 'TGAA stats',
+    description:
+      'A one-page website to show the percentage of players who got each achievement on The Great Ace Attorney Chronicles.',
+    url: 'tgaa-stats',
+    previewImage: tgaaStatsPreview,
+  },
+  {
+    title: 'TGAA stats',
+    description:
+      'A one-page website to show the percentage of players who got each achievement on The Great Ace Attorney Chronicles.',
     url: 'tgaa-stats',
     previewImage: tgaaStatsPreview,
   },
@@ -43,22 +78,22 @@ const Portfolio = () => {
   return (
     <div id="portfolio">
       {portfolioItems.map((item, index) => (
-        <div key={index}>
-          <PortfolioCard item={item} />
-        </div>
+        <PortfolioCard item={item} key={index} />
       ))}
     </div>
   );
 };
 
-const PortfolioCard = ({ item }) => {
+const PortfolioCard = ({ item, key }) => {
   const url = `https://${item.url}.cherrycodes.net`;
   const shortUrl = `${item.url}.cherrycodes.net`;
 
   return (
-    <a className="portfolio-card" href={url} target="_blank" rel="noreferrer">
+    <a className="portfolio-card" href={url} target="_blank" rel="noreferrer" key={key}>
       <div className="top-bar">
         <h2>{item.title}</h2>
+        <span className="fake-button"></span>
+        <FiExternalLink />
       </div>
       <div className="portfolio-card-content">
         <img src={item.previewImage} alt={item.title} />
