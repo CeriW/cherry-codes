@@ -1,52 +1,8 @@
 import logo from './assets/cherry.png';
-import tgaaStatsPreview from './assets/tgaa-stats-preview.webp';
+import portfolioItems from './portfolioItems.js';
 import './App.css';
+import './portfolio.css';
 import { FiExternalLink } from 'react-icons/fi';
-
-const portfolioItems = [
-  {
-    title: 'TGAA stats',
-    description:
-      'A one-page website to show the percentage of players who got each achievement on The Great Ace Attorney Chronicles.',
-    url: 'tgaa-stats',
-    previewImage: tgaaStatsPreview,
-  },
-  {
-    title: 'TGAA stats',
-    description:
-      'A one-page website to show the percentage of players who got each achievement on The Great Ace Attorney Chronicles.',
-    url: 'tgaa-stats',
-    previewImage: tgaaStatsPreview,
-  },
-  {
-    title: 'TGAA stats',
-    description:
-      'A one-page website to show the percentage of players who got each achievement on The Great Ace Attorney Chronicles.',
-    url: 'tgaa-stats',
-    previewImage: tgaaStatsPreview,
-  },
-  {
-    title: 'TGAA stats',
-    description:
-      'A one-page website to show the percentage of players who got each achievement on The Great Ace Attorney Chronicles.',
-    url: 'tgaa-stats',
-    previewImage: tgaaStatsPreview,
-  },
-  {
-    title: 'TGAA stats',
-    description:
-      'A one-page website to show the percentage of players who got each achievement on The Great Ace Attorney Chronicles.',
-    url: 'tgaa-stats',
-    previewImage: tgaaStatsPreview,
-  },
-  {
-    title: 'TGAA stats',
-    description:
-      'A one-page website to show the percentage of players who got each achievement on The Great Ace Attorney Chronicles.',
-    url: 'tgaa-stats',
-    previewImage: tgaaStatsPreview,
-  },
-];
 
 function App() {
   return (
@@ -98,10 +54,6 @@ const PortfolioCard = ({ item, key }) => {
       <div className="portfolio-card-content">
         <img src={item.previewImage} alt={item.title} />
         <div>{item.description}</div>
-        {/* <div>
-        <h3>Techy details</h3>
-        {item.tech}
-      </div> */}
         <a href={url} target="_blank" rel="noreferrer">
           {shortUrl}
         </a>
