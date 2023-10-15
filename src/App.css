@@ -20,7 +20,6 @@ img {
 }
 
 body {
-  /* background: radial-gradient(var(--greenlight), var(--green)) no-repeat; */
   background: url('./assets/grid-background.svg');
   background-size: 1000px;
   font-family: 'M PLUS 1 Code', monospace;
