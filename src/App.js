@@ -57,16 +57,20 @@ const PortfolioCard = ({ item }) => {
 
   return (
     <a className="portfolio-card" href={url} target="_blank" rel="noreferrer">
-      <h2>{item.title}</h2>
-      <img src={item.previewImage} alt={item.title} />
-      <div>{item.description}</div>
-      <div>
+      <div className="top-bar">
+        <h2>{item.title}</h2>
+      </div>
+      <div className="portfolio-card-content">
+        <img src={item.previewImage} alt={item.title} />
+        <div>{item.description}</div>
+        {/* <div>
         <h3>Techy details</h3>
         {item.tech}
+      </div> */}
+        <a href={url} target="_blank" rel="noreferrer">
+          {shortUrl}
+        </a>
       </div>
-      <a href={url} target="_blank" rel="noreferrer">
-        {shortUrl}
-      </a>
     </a>
   );
 };
